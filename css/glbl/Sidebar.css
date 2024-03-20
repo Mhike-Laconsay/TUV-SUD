@@ -1,0 +1,42 @@
+.navbar {
+    /* background-image: var(--secondary-color-gradient); */
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: inherit; 
+    position: fixed; 
+    z-index: 3;
+}
+
+#profile-container {
+    border-radius: 100%; 
+    color: var(--primary-color);
+    background-color: var(--secondary-color); 
+    width: fit-content; 
+    height: fit-content; 
+    padding: 25px;
+}
+
+#username {
+    color: var( --septenary-color);
+}
+
+.nav-link {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    color: var(--septenary-color) !important;
+    border-left: 5px solid transparent !important;
+}
+
+.nav-link.active {
+    background-color: var(--secondary-color) !important;
+    border-left: 5px solid white !important;
+    color: var(--primary-color) !important;
+}
+
+#spacer {
+    opacity: 50%;
+    color: var(--senary-color);
+    height: 1px;
+}

@@ -1,0 +1,80 @@
+#title-container {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 10px 10px 10px 10px;
+    padding: 2rem; 
+    filter: drop-shadow(0px 1px 24px rgba(0, 0, 0, 0.25));
+    max-width: 800px; /* Adjust this value for shorter width */
+    margin: 0 10px; /* Added margin for spacing between cards */
+   
+}
+
+#main-container {
+    background-color: rgb(245, 245, 245);
+    /* min-height: 100vh; */
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    align-items: flex-start; /* Align the cards at the top of the container */
+}
+
+#user {
+    color: var(--quarternary-color);
+}
+
+#content-container {
+    margin-top: -10px;
+    /* background-color: var(--primary-color); */
+    border-radius: 10px;
+    padding: 2rem;
+    filter: drop-shadow(0px 1px 24px rgba(0, 0, 0, 0.25));
+}
+
+[id^=data-row] {
+    padding: .5rem;
+}
+
+[id^=data-container] {
+    border-radius: 5px;
+}
+
+#font-chart-container {
+    display: flex;
+    justify-content: center;
+}
+
+#data-container-a {
+    color: var(--octal-color);
+    background-color: var(--primary-color);
+}
+
+#data-container-b {
+    color: var(--octal-color);
+    background-color: var(--primary-color);
+}
+
+#data-container-c {
+    color: var(--octal-color);
+    background-color: var(--primary-color);
+}
+
+#data-container-d {
+    color: var(--octal-color);
+    background-color: var(--primary-color);
+    height: auto;
+}
+
+
+/* Responsive */
+@media (min-width: 320px) {
+    #main-container {
+        padding: 1rem;
+        padding-top: 6rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #main-container {
+        padding: 2rem;
+        padding-top: 2rem;
+    }
+}
