@@ -12,6 +12,7 @@ height: 100%;
 }
 }
 body{
-    background-image: var(--secondary-color-gradient);
+    background-image: var(--tertiary-color-gradient);
+    color: var(--primary-color);
 
 }
