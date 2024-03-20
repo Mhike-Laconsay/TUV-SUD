@@ -16,3 +16,8 @@ body{
     color: var(--primary-color);
 
 }
+.btn-info {
+    background-color: var(--nonary-color);
+    /* border-color: green; Optional: If you want to change the border color as well */
+    color: var(--primary-color);
+}
