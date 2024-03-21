@@ -21,3 +21,7 @@ body{
     /* border-color: green; Optional: If you want to change the border color as well */
     color: var(--primary-color);
 }
+
+#vh-100{
+    justify-content: end;
+}
