@@ -5,7 +5,8 @@
 }
 
 #create {
-    background-color: var(--secondary-color);
+    background-color: #08B708;
+    border-color: #08B708;
     margin-bottom: 1rem;
 }
 
@@ -43,8 +44,8 @@ th {
 }
 
 #users-table th, #target-sales-table th {
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
+    color: var(--septenary-color);
+    background-color: var(--primary-color);
     /* border: 1px solid var(--septenary-color); */
 }
 
@@ -67,8 +68,8 @@ th {
 }
 
 #edit-row {
-    color: var(--septenary-color);
-    background-color: var(--quarternary-color);
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 #delete-row {
