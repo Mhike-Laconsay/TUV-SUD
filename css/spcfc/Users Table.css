@@ -25,7 +25,7 @@
     filter: drop-shadow(0px 1px 24px rgba(0, 0, 0, 0.25));
 }
 
-#users-table, #valid-emails-table {
+#users-table, #target-sales-table {
     width: 100%;
     border: 1px solid var(--primary-color);
     border-radius: 5px;
@@ -35,14 +35,14 @@
 #users-table tr,
 td,
 th,
-#valid-emails-table tr,
+#target-sales-table tr,
 td,
 th {
     padding: .5rem;
     /* border: 1px solid var(--septenary-color); */
 }
 
-#users-table th, #valid-emails-table th {
+#users-table th, #target-sales-table th {
     color: var(--primary-color);
     background-color: var(--secondary-color);
     /* border: 1px solid var(--septenary-color); */

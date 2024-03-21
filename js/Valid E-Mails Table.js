@@ -1,5 +1,5 @@
 // style setup
-new DataTable('#valid-emails-table', {
+new DataTable('#target-sales-table', {
     columnDefs: [
         {
             className: 'dtr-control',
@@ -33,8 +33,8 @@ function addNewRow() {
             '<td></td>',
             'mhklrnc ' + counter_2,
             'North Luzon' + counter_2,
-            '$ 100' + counter_2,
-            '$ 200' + counter_2,
+            '₱ 100' + counter_2,
+            '€ 200' + counter_2,
             '2024' + counter_2,
             '<button id="edit-row" class="btn btn-primary" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#edit-email">Edit</button> <button id="delete-row" class="btn btn-primary" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#delete">Delete</button>',
         ])
@@ -43,7 +43,7 @@ function addNewRow() {
     counter_2++;
 }
 
-const table_2 = new DataTable('#valid-emails-table');
+const table_2 = new DataTable('#target-sales-table');
 let counter_2 = 1;
 
 for (x = 1; x <= 100; x++) {

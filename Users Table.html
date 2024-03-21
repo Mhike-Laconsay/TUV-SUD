@@ -234,10 +234,20 @@
             <div class="modal-body">
               <div class="row">
                 <div class="col-lg-4 col-sm-6">
-                  <label for="name" class="form-label">Username</label>
+                  <label for="username" class="form-label">Username</label><br>
+                  <label for="name" class="form-label">Name</label><br>
+                  <label for="roles" class="form-label">Roles</label><br>
+                  <label for="password" class="form-label">Password</label>
                 </div>
                 <div class="col-lg-8 col-sm-6">
-                  <input type="text" class="form-control" id="name" placeholder="">
+                  <input type="text" class="form-control" id="username" placeholder="Username">
+                  <input type="text" class="form-control" id="name" placeholder="Name">
+                  <select class="form-control" id="roles">
+                    <option value="" selected disabled>Choose role</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Regular">Employee</option>
+                  </select>
+                  <input type="text" class="form-control" id="password" placeholder="Password">
                 </div>
               </div>
             </div>
@@ -254,16 +264,39 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel">User Information</h5>
+              <h5 class="modal-title" id="staticBackdropLabel">Target Sales Each</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <div class="row">
                 <div class="col-lg-4 col-sm-6">
-                  <label for="name" class="form-label">E-Mail Address:</label>
+                  <label for="name" class="form-label">Username</label><br>
+                  <label for="designation" class="form-label">Designation</label><br>
+                  <label for="peso" class="form-label">Peso</label><br>
+                  <label for="euro" class="form-label">Euro</label><br>
+                  <label for="year" class="form-label">Year</label>
+                  
                 </div>
                 <div class="col-lg-8 col-sm-6">
-                  <input type="text" class="form-control" id="name" placeholder="">
+                  <input type="text" class="form-control" id="username" placeholder="Username">
+                  <select class="form-control" id="designation">
+                    <option value="" selected disabled>Choose Designation</option>
+                    <option value="Admin">North Luzon</option>
+                    <option value="Regular">South Luzon</option>
+                    <option value="Regular">NCR</option>
+                    <option value="Regular">Visayas</option>
+                    <option value="Regular">Mindanao</option>
+                  </select>
+                  <input type="text" class="form-control" id="peso" placeholder="Peso">
+                  <input type="text" class="form-control" id="euro" placeholder="Euro">
+                  <select class="form-control" id="year">
+                    <option value="" selected disabled>Choose Year</option>
+                    <option value="Admin">2023</option>
+                    <option value="Regular">2024</option>
+                    <option value="Regular">2025</option>
+                    <option value="Regular">2026</option>
+                    <option value="Regular">2027</option>
+                  </select>
                 </div>
               </div>
             </div>
@@ -284,7 +317,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              Are you sure you want to delete this (row's name)?
+              Are you sure you want to delete this row?
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
@@ -345,7 +378,7 @@
                 </button>
                 <!-- Table -->
                 <div class="visually-hidden" id="breakpoint"></div>
-                <table id="valid-emails-table" class="table table-striped responsive display">
+                <table id="target-sales-table" class="table table-striped responsive display">
                   <thead>
                     <tr>
                       <th></th>
@@ -387,7 +420,7 @@
   <script type="text/javascript" src="js/Users Table.js"></script>
   <script type="text/javascript" src="js/Valid E-Mails Table.js"></script>
   <script type="text/javascript" src="js/Initialize Toasts.js"></script>
-  <script type="text/javascript" src="js/Dashboard.js"></script>
+
 </body>
 
 </html>
