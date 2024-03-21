@@ -48,6 +48,13 @@ function addNewRow() {
             'Mhike Laurence ' + counter,
             'Admin ' + counter,
             'Password' + counter,
+            'chas' + counter,
+            'mhklrnc' + counter,
+            'Mhike Laurence ' + counter,
+            'Admin ' + counter,
+            'Password' + counter,
+            'chas' + counter,
+            'chas' + counter,
             // '<button id="status-active">Active</button> <button id="status-inactive">Inactive</button>',
             '<button id="edit-row" class="btn btn-primary" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#edit">Edit</button> <button id="delete-row" class="btn btn-primary" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#delete">Delete</button>',
         ])
@@ -76,4 +83,3 @@ table.on('mouseenter', 'td', function () {
         .nodes()
         .each((el) => el.classList.add('highlight'));
 });
-

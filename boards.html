@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Users Table</title>
+  <title>Boards</title>
   <!-- Local Bootstrap -->
   <!-- <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
   <!-- CDN Bootstrap -->
@@ -45,7 +45,7 @@
   <link href="css/glbl/Fixes.css" rel="stylesheet">
   <link href="css/glbl/Sidebar.css" rel="stylesheet">
   <link href="css/glbl/Shared.css" rel="stylesheet">
-  <link href="css/spcfc/Users Table.css" rel="stylesheet">
+  <link href="css/spcfc/boards.css" rel="stylesheet">
 </head>
 
 <body>
@@ -90,7 +90,7 @@
                     </li>
   
                     <li>
-                      <a href="Boards.html" class="nav-link">
+                      <a href="boards.html" class="nav-link active">
                           <i class="fa-solid fa-clipboard-list"></i>
                         Boards
                       </a>
@@ -104,7 +104,7 @@
                     </li>
   
                     <li>
-                      <a href="Users Table.html" class="nav-link active">
+                      <a href="Users Table.html" class="nav-link">
                           <i class="fa-solid fa-user-tie"></i>
                         Admin
                       </a>
@@ -342,7 +342,7 @@
           <div id="content">
             <div style="background-color: rgb(245, 245, 245); min-height: 100vh;" id="main-container">
               <div class="container-fluid" id="title-container">
-                <h3>Users Table</h3>
+                <h3>Boards</h3>
               </div>
               <div class="container-fluid" id="table-container">
                 <!-- Button trigger modal create/edit -->
@@ -351,68 +351,41 @@
                 </button>
                 <!-- Table -->
                 <div class="visually-hidden" id="breakpoint"></div>
-                <table id="users-table" class="table table-striped responsive display">
-                  <thead>
-                    <tr>
-                      <th></th>
-                      <th class="all">Username</th>
-                      <th class="min-tablet">Name</th>
-                      <th class="min-tablet">Roles</th>
-                      <th class="min-desktop">Password</th>
-                      <th class="min-desktop">Action</th>
-                    </tr>
-                  </thead>
-                  <tfoot>
-                    <tr>
-                      <th></th>
-                      <th>Username</th>
-                      <th>Name</th>
-                      <th>Roles</th>
-                      <th>Password</th>
-                      <th>Action</th>
-                    </tr>
-                  </tfoot>
-                </table>
-              </div>
+<div class="table-responsive">
+    <table id="users-table" class="table table-striped responsive display">
+        <thead>
+            <tr>
+                <th></th>
+                <th class="all">Date</th>
+                <th class="min-tablet">Assigned</th>
+                <th class="min-desktop">Client Name</th>
+                <th class="min-tablet">Address</th>
+                <th class="min-tablet">Location</th>
+                <th class="min-desktop">Type of Leads</th>
+                <th class="min-tablet">Standards</th>
+                <th class="min-tablet">Cert Type</th>
+                <th class="min-desktop">EA Code</th>
+                <th class="min-tablet">Location</th>
+                <th class="min-desktop">Probability</th>
+                <th class="min-desktop">Action</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th>Username</th>
+                <th>Name</th>
+                <th>Roles</th>
+                <th>Password</th>
+                <th>Action</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
 
-              <hr>
+
               
-              <div class="container-fluid" id="title-container">
-                <h3>Target Sales</h3>
-              </div>
-              <div class="container-fluid" id="table-container">
-                <!-- Button trigger modal create/edit -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#edit-email" id="create">
-                  Add
-                </button>
-                <!-- Table -->
-                <div class="visually-hidden" id="breakpoint"></div>
-                <table id="target-sales-table" class="table table-striped responsive display">
-                  <thead>
-                    <tr>
-                      <th></th>
-                      <th>Username</th>
-                      <th>Designation</th>
-                      <th>Peso</th>
-                      <th>Euro</th>
-                      <th>Year</th>
-                      <th>Action</th>
-                    </tr>
-                  </thead>
-                  <tfoot>
-                    <tr>
-                      <th></th>
-                      <th>Username</th>
-                      <th>Designation</th>
-                      <th>Peso</th>
-                      <th>Euro</th>
-                      <th>Year</th>
-                      <th>Action</th>
-                    </tr>
-                  </tfoot>
-                </table>
-              </div>
-            </div>
+
         </main>
         <!-- Footer -->
         <footer class="page-footer">
@@ -426,8 +399,8 @@
     </div>
   </div>
   <!-- Custom -->
-  <script type="text/javascript" src="js/Users Table.js"></script>
-  <script type="text/javascript" src="js/targetsales-each.js"></script>
+  <script type="text/javascript" src="js/boards.js"></script>
+  <!-- <script type="text/javascript" src="js/Valid E-Mails Table.js"></script> -->
   <script type="text/javascript" src="js/Initialize Toasts.js"></script>
 
 </body>
